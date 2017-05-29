@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+    	<meta charset="utf-8" />
+        <title>Wind Lidar 관측자료 수신현황</title>
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/layout.css" />
+    </head>
+    <body>
+        <div id="wrap">
+            <div id="header">  
+                <div class="head">
+                    <h1 class="logo fl_left"><a href="index.html"><img src="image/logo.png" alt="Wind Lidar" title="Wind Lidar"/></a></h1>
+                    <div class="gnb fl_left">
+                        <ul>
+                            <li><a href="wind_time.html">시간대별 통계</a></li>
+                            <li><a href="wind_day.html">일별 통계</a></li>
+                            <li><a href="wind_month.html">월별 통계</a></li>
+                            <li><a class="selected" href="admin_list.html">사용자관리</a></li>
+                        </ul>
+                    </div>
+                    <div class="login fl_right"><img src="image/icon_member.png" style="padding-right:10px">관리자<img src="image/btn_logout.png" style="padding-left:10px"></div>
+                </div>
+            </div>
+            <div id="section"> 
+                <div class="container">
+                    <h3><img src="image/icon_wind.png" style="margin-bottom:6px">사용자 관리</h3>           
+
+                    <table class="table_list" style="margin-top:15px">
+                        <thead>
+                            <tr>
+                                <th>순번</th>
+                                <th>사용자 아이디</th>
+                                <th>사용자명</th>
+                                <th>메일주소</th>
+                                <th>최종접속시간</th>
+                                <th>등록일자</th>
+                                <th>권한여부</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>minsub</td>
+                                <td>정민섭</td>
+                                <td>mjoung@hist.co.kr</td>
+                                <td>2017.02.14 13:12:30</td>
+                                <td>2017.02.01 14:12:10</td>
+                                <td>일반사용자</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>minsub</td>
+                                <td>정민섭</td>
+                                <td>mjoung@hist.co.kr</td>
+                                <td>2017.02.14 13:12:30</td>
+                                <td>2017.02.01 14:12:10</td>
+                                <td>관리자</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>minsub</td>
+                                <td>정민섭</td>
+                                <td>mjoung@hist.co.kr</td>
+                                <td>2017.02.14 13:12:30</td>
+                                <td>2017.02.01 14:12:10</td>
+                                <td>접속차단</td>
+                            </tr>
+                        </tbody>
+                    </table>  
+                    <button type="button" class="btn_blue fl_right" onclick="location.href='admin_write.html'" style="margin-top:15px">사용자 등록</button>
+                </div>
+            </div>
+            <div id="footer">
+                Wind Lidar관측자료 수신현황  e-mail : email@email.co.kr TEL : 02-123-4567<br/>COPYRIGHT (c) 2017 WIND LIDAR ALL RIGHTS RESERVED
+            </div>
+        </div>
+    </body>
+</html>

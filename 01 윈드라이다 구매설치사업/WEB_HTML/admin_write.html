@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+    	<meta charset="utf-8" />
+        <title>Wind Lidar 관측자료 수신현황</title>
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/layout.css" />
+    </head>
+    <body>
+        <div id="wrap">
+            <div id="header">  
+                <div class="head">
+                    <h1 class="logo fl_left"><a href="index.html"><img src="image/logo.png" alt="Wind Lidar" title="Wind Lidar"/></a></h1>
+                    <div class="gnb fl_left">
+                        <ul>
+                            <li><a href="wind_time.html">시간대별 통계</a></li>
+                            <li><a href="wind_day.html">일별 통계</a></li>
+                            <li><a href="wind_month.html">월별 통계</a></li>
+                            <li><a class="selected" href="admin_list.html">사용자관리</a></li>
+                        </ul>
+                    </div>
+                    <div class="login fl_right"><img src="image/icon_member.png" style="padding-right:10px">관리자<img src="image/btn_logout.png" style="padding-left:10px"></div>
+                </div>
+            </div>
+            <div id="section"> 
+                <div class="container">
+                    <h3><img src="image/icon_wind.png" style="margin-bottom:6px">사용자 등록</h3>           
+
+                    <table class="table_view" style="margin-top:15px">
+                        <colgroup>
+                            <col width="30%" />
+                            <col width="70%" />
+                        </colgroup>
+                        <tr>
+                            <th>사용자 아이디</th>
+                            <td>
+                                <label for="admin_uid">사용자 아이디</label>
+		                        <input type="text" id="admin_uid" name="admin_uid" class="input_box">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>패스워드</th>
+                            <td>
+                                <label for="admin_pwd">패스워드</label>
+		                        <input type="password" id="admin_pwd" name="admin_pwd" class="input_box">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>사용자명</th>
+                            <td>
+                                <label for="admin_name">사용자명</label>
+		                        <input type="text" id="admin_name" name="admin_name" class="input_box">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>메일주소</th>                            
+                            <td>
+                                <label for="admin_mail">메일주소</label>
+		                        <input type="text" id="admin_mail" name="admin_mail" class="input_box">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>권한여부</th>                            
+                            <td>
+                                <input type="radio" id="admin_auth1" name="admin_auth1" value="관리자" checked>
+                                <label for="admin_auth1">관리자</label> 관리자
+                                <input type="radio" id="admin_auth2" name="admin_auth2" value="일반사용자" style="margin-left:20px;">
+                                <label for="admin_auth2">일반사용자</label> 일반사용자
+                            </td>
+                        </tr>
+                    </table>  
+                    <button type="button" class="btn_blue fl_right" onclick="" style="margin-top:15px">취소</button>
+                    <button type="button" class="btn_blue fl_right" onclick="" style="margin-top:15px;margin-right:10px">등록</button>
+                </div>
+            </div>
+            <div id="footer">
+                Wind Lidar관측자료 수신현황  e-mail : email@email.co.kr TEL : 02-123-4567<br/>COPYRIGHT (c) 2017 WIND LIDAR ALL RIGHTS RESERVED
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+    	<meta charset="utf-8" />
+        <title>Wind Lidar 관측자료 수신현황</title>
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/layout.css" />
+    </head>
+    <script type="text/javascript">
+        function alarm() {
+	       window.open("alarm_message.html","Alarm message","width=800,height=550");
+        }
+    </script>
+    <body>
+        <div id="wrap">
+            <div id="header">  
+                <div class="head">
+                    <h1 class="logo fl_left"><a href="index.html"><img src="image/logo.png" alt="Wind Lidar" title="Wind Lidar"/></a></h1>
+                    <div class="gnb fl_left">
+                        <ul>
+                            <li><a href="wind_time.html">시간대별 통계</a></li>
+                            <li><a href="wind_day.html">일별 통계</a></li>
+                            <li><a href="wind_month.html">월별 통계</a></li>
+                            <li><a href="admin_list.html">사용자관리</a></li>
+                        </ul>
+                    </div>
+                    <div class="login fl_right"><img src="image/icon_member.png" style="padding-right:10px">관리자<img src="image/btn_logout.png" style="padding-left:10px"></div>
+                </div>
+            </div>
+            <div id="section"> 
+                <div class="container">
+                    <div class="wind_box fl_left" style="margin-right:25px">
+                        <h1 class="fl_left"><img src="image/icon_wind.png" style="margin-bottom:6px">일산 (13211)</h1>
+                        <button type="button" class="btn_more fl_right" onclick="location.href='#'">MORE</button>
+                        <div class="status fl_left">
+                            <div class="box s_01" style="margin-right:5px">
+                                <span class="white">Lidar Connections STS</span> <br/> 
+                                <img src="image/sts_blue.png" style="margin-bottom:6px;margin-right:4px;">
+                                <span class="blue">Connected</span>
+                            </div>
+                            <div class="box s_01">
+                                <span class="white">Lidar Status</span> <br/> 
+                                <span class="gray">Scanning</span>
+                            </div>
+                            <div class="box s_01" style="margin-right:5px;margin-top:5px">
+                                <span class="white">관측데이터 수신</span> <br/> 
+                                <img src="image/sts_blue.png" style="margin-bottom:6px;margin-right:4px;">
+                                <span class="blue">OK</span>
+                            </div>
+                            <div class="box s_01"  style="margin-top:5px">
+                                <span class="white">데이터 송신 프로세스</span> <br/> 
+                                <img src="image/sts_blue.png" style="margin-bottom:6px;margin-right:4px;">
+                                <span class="blue">OK</span>
+                            </div>
+                            <div class="box s_02" style="margin-right:5px;margin-top:5px">
+                                <span class="white">최종수신시각(UTC)</span>
+                            </div>
+                            <div class="box s_02_1"  style="margin-top:5px">
+                                <span class="gray">2017-04-05 15:50:00</span>
+                            </div>
+                            <div class="box s_03" style="margin-right:5px;margin-top:5px">
+                                <span class="white">Today 수신율</span>
+                            </div>
+                            <div class="box s_03_1"  style="margin-top:5px; padding-right:10px;">
+                                <progress min="0" max="100" value="90"></progress>
+                                <span class="gray">90%</span>
+                            </div>
+                            <div class="box s_03" style="margin-right:5px;margin-top:5px">
+                                <span class="white">Yesterday 수신율</span>
+                            </div>
+                            <div class="box s_03_1"  style="margin-top:5px">
+                                <progress min="0" max="100" value="100"></progress>
+                                <span class="gray">100%</span>
+                            </div>
+                        </div>
+                        
+                        <h2 class="fl_left">Scanning Parameters</h2>
+                        <button type="button" class="btn_more fl_right" onclick="location.href='index_scanning.html'">MORE</button>
+                        <table class="table_scan">
+                            <colgroup>
+                                <col width="45%">
+                                <col width="55%">
+                            </colgroup>
+                            <tr>
+                                <th>최종수신시간 (UTC)</th>
+                                <td>2017-04-05 15:50:00</td>
+                            </tr>
+                            <tr>
+                                <th>Measurement Type</th>
+                                <td>O-PPI</td>
+                            </tr>
+                            <tr>
+                                <th>Azimuth Angle</th>
+                                <td>-180</td>
+                            </tr>
+                            <tr>
+                                <th>Elevation Angle</th>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <th>Sector Size</th>
+                                <td>360</td>
+                            </tr>
+                            <tr>
+                                <th>Scanning Speed</th>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th>Accumulation Time</th>
+                                <td>1000</td>
+                            </tr>
+                        </table>
+                        
+                        <h2 class="fl_left">Alaram Message</h2>
+                        <button type="button" class="btn_more fl_right" onclick="alarm()">MORE</button>
+                        <table class="table_alaram">
+                            <colgroup>
+                                <col width="45%">
+                                <col width="55%">
+                            </colgroup>
+                            <tr>
+                                <th>최종수신시간 (UTC)</th>
+                                <td>2017-04-05 15:50:00</td>
+                            </tr>
+                            <tr>
+                                <th>Lidar Connection sts</th>
+                                <td>no connection</td>
+                            </tr>
+                            <tr>
+                                <th>Lidar Status</th>
+                                <td>ready for operation</td>
+                            </tr>
+                            <tr>
+                                <th>Error Source</th>
+                                <td>...</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="wind_box fl_left" style="margin-right:25px">
+                        <h1 class="fl_left"><img src="image/icon_wind.png" style="margin-bottom:6px">송도 (13210)</h1>
+                        <button type="button" class="btn_more fl_right">MORE</button>
+                        <div class="status fl_left">
+                            <div class="box s_01" style="margin-right:5px">
+                                <span class="white">Lidar Connections STS</span> <br/> 
+                                <img src="image/sts_red.png" style="margin-bottom:6px;margin-right:4px;">
+                                <span class="red">Not Connected</span>
+                            </div>
+                            <div class="box s_01">
+                                <span class="white">Lidar Status</span> <br/> 
+                                <span class="gray">State is unknown</span>
+                            </div>
+                            <div class="box s_01" style="margin-right:5px;margin-top:5px">
+                                <span class="white">관측데이터 수신</span> <br/> 
+                                <img src="image/sts_red.png" style="margin-bottom:6px;margin-right:4px;">
+                                <span class="red">Error</span>
+                            </div>
+                            <div class="box s_01"  style="margin-top:5px">
+                                <span class="white">데이터 송신 프로세스</span> <br/> 
+                                <img src="image/sts_blue.png" style="margin-bottom:6px;margin-right:4px;">
+                                <span class="blue">OK</span>
+                            </div>
+                            <div class="box s_02" style="margin-right:5px;margin-top:5px">
+                                <span class="white">최종수신시각(UTC)</span>
+                            </div>
+                            <div class="box s_02_1"  style="margin-top:5px">
+                                <span class="gray">2017-04-05 15:50:00</span>
+                            </div>
+                            <div class="box s_03" style="margin-right:5px;margin-top:5px">
+                                <span class="white">Today 수신율</span>
+                            </div>
+                            <div class="box s_03_1"  style="margin-top:5px; padding-right:10px;">
+                                <progress min="0" max="100" value="90"></progress>
+                                <span class="gray">90%</span>
+                            </div>
+                            <div class="box s_03" style="margin-right:5px;margin-top:5px">
+                                <span class="white">Yesterday 수신율</span>
+                            </div>
+                            <div class="box s_03_1"  style="margin-top:5px">
+                                <progress min="0" max="100" value="100"></progress>
+                                <span class="gray">100%</span>
+                            </div>
+                        </div>
+                        
+                        <h2 class="fl_left">Scanning Parameters</h2>
+                        <button type="button" class="btn_more fl_right">MORE</button>
+                        <table class="table_scan">
+                            <colgroup>
+                                <col width="45%">
+                                <col width="55%">
+                            </colgroup>
+                            <tr>
+                                <th>최종수신시간 (UTC)</th>
+                                <td>2017-04-05 15:50:00</td>
+                            </tr>
+                            <tr>
+                                <th>Measurement Type</th>
+                                <td>O-PPI</td>
+                            </tr>
+                            <tr>
+                                <th>Azimuth Angle</th>
+                                <td>-180</td>
+                            </tr>
+                            <tr>
+                                <th>Elevation Angle</th>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <th>Sector Size</th>
+                                <td>360</td>
+                            </tr>
+                            <tr>
+                                <th>Scanning Speed</th>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th>Accumulation Time</th>
+                                <td>1000</td>
+                            </tr>
+                        </table>
+                        
+                        <h2 class="fl_left">Alaram Message</h2>
+                        <button type="button" class="btn_more fl_right">MORE</button>
+                        <table class="table_alaram">
+                            <colgroup>
+                                <col width="45%">
+                                <col width="55%">
+                            </colgroup>
+                            <tr>
+                                <th>최종수신시간 (UTC)</th>
+                                <td>2017-04-05 15:50:00</td>
+                            </tr>
+                            <tr>
+                                <th>Lidar Connection sts</th>
+                                <td>no connection</td>
+                            </tr>
+                            <tr>
+                                <th>Lidar Status</th>
+                                <td>ready for operation</td>
+                            </tr>
+                            <tr>
+                                <th>Error Source</th>
+                                <td>...</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="wind_box fl_left">
+                        <h1 class="fl_left"><img src="image/icon_wind.png" style="margin-bottom:6px">구로 (13206)</h1>
+                        <button type="button" class="btn_more fl_right">MORE</button>
+                        <div class="status fl_left">
+                            <div class="box s_01" style="margin-right:5px">
+                                <span class="white">Lidar Connections STS</span> <br/> 
+                                <img src="image/sts_blue.png" style="margin-bottom:6px;margin-right:4px;">
+                                <span class="blue">Connected</span>
+                            </div>
+                            <div class="box s_01">
+                                <span class="white">Lidar Status</span> <br/> 
+                                <span class="red">An error occurred</span>
+                            </div>
+                            <div class="box s_01" style="margin-right:5px;margin-top:5px">
+                                <span class="white">관측데이터 수신</span> <br/> 
+                                <img src="image/sts_blue.png" style="margin-bottom:6px;margin-right:4px;">
+                                <span class="blue">OK</span>
+                            </div>
+                            <div class="box s_01"  style="margin-top:5px">
+                                <span class="white">데이터 송신 프로세스</span> <br/> 
+                                <img src="image/sts_blue.png" style="margin-bottom:6px;margin-right:4px;">
+                                <span class="blue">OK</span>
+                            </div>
+                            <div class="box s_02" style="margin-right:5px;margin-top:5px">
+                                <span class="white">최종수신시각(UTC)</span>
+                            </div>
+                            <div class="box s_02_1"  style="margin-top:5px">
+                                <span class="gray">2017-04-05 15:50:00</span>
+                            </div>
+                            <div class="box s_03" style="margin-right:5px;margin-top:5px">
+                                <span class="white">Today 수신율</span>
+                            </div>
+                            <div class="box s_03_1"  style="margin-top:5px; padding-right:10px;">
+                                <progress min="0" max="100" value="90"></progress>
+                                <span class="gray">90%</span>
+                            </div>
+                            <div class="box s_03" style="margin-right:5px;margin-top:5px">
+                                <span class="white">Yesterday 수신율</span>
+                            </div>
+                            <div class="box s_03_1"  style="margin-top:5px">
+                                <progress min="0" max="100" value="100"></progress>
+                                <span class="gray">100%</span>
+                            </div>
+                        </div>
+                        
+                        <h2 class="fl_left">Scanning Parameters</h2>
+                        <button type="button" class="btn_more fl_right">MORE</button>
+                        <table class="table_scan">
+                            <colgroup>
+                                <col width="45%">
+                                <col width="55%">
+                            </colgroup>
+                            <tr>
+                                <th>최종수신시간 (UTC)</th>
+                                <td>2017-04-05 15:50:00</td>
+                            </tr>
+                            <tr>
+                                <th>Measurement Type</th>
+                                <td>O-PPI</td>
+                            </tr>
+                            <tr>
+                                <th>Azimuth Angle</th>
+                                <td>-180</td>
+                            </tr>
+                            <tr>
+                                <th>Elevation Angle</th>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <th>Sector Size</th>
+                                <td>360</td>
+                            </tr>
+                            <tr>
+                                <th>Scanning Speed</th>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th>Accumulation Time</th>
+                                <td>1000</td>
+                            </tr>
+                        </table>
+                        
+                        <h2 class="fl_left">Alaram Message</h2>
+                        <button type="button" class="btn_more fl_right">MORE</button>
+                        <table class="table_alaram">
+                            <colgroup>
+                                <col width="45%">
+                                <col width="55%">
+                            </colgroup>
+                            <tr>
+                                <th>최종수신시간 (UTC)</th>
+                                <td>2017-04-05 15:50:00</td>
+                            </tr>
+                            <tr>
+                                <th>Lidar Connection sts</th>
+                                <td>no connection</td>
+                            </tr>
+                            <tr>
+                                <th>Lidar Status</th>
+                                <td>ready for operation</td>
+                            </tr>
+                            <tr>
+                                <th>Error Source</th>
+                                <td>...</td>
+                            </tr>
+                        </table>
+                    </div>
+                
+                </div>
+            </div>
+            <div id="footer">
+                Wind Lidar관측자료 수신현황  e-mail : email@email.co.kr TEL : 02-123-4567<br/>COPYRIGHT (c) 2017 WIND LIDAR ALL RIGHTS RESERVED
+            </div>
+        </div>
+    </body>
+</html>

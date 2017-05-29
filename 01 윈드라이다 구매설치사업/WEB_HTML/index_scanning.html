@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+    	<meta charset="utf-8" />
+        <title>Wind Lidar 관측자료 수신현황</title>
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/layout.css" />
+    </head>
+    <body>
+        <div id="wrap">
+            <div id="header">  
+                <div class="head">
+                    <h1 class="logo fl_left"><a href="index.html"><img src="image/logo.png" alt="Wind Lidar" title="Wind Lidar"/></a></h1>
+                    <div class="gnb fl_left">
+                        <ul>
+                            <li><a href="wind_time.html">시간대별 통계</a></li>
+                            <li><a href="wind_day.html">일별 통계</a></li>
+                            <li><a href="wind_month.html">월별 통계</a></li>
+                            <li><a href="admin_list.html">사용자관리</a></li>
+                        </ul>
+                    </div>
+                    <div class="login fl_right"><img src="image/icon_member.png" style="padding-right:10px">관리자<img src="image/btn_logout.png" style="padding-left:10px"></div>
+                </div>
+            </div>
+            <div id="section"> 
+                <div class="container">
+                    <h3><img src="image/icon_wind.png" style="margin-bottom:6px">Scanning Parameter - 일산 (13211)</h3>
+                    <div class="search_box">
+                        <form action="" method="" name="search">
+                            <fieldset>
+                                <legend>검색</legend>
+                                관측소별
+                                <select name="select_location" class="sel" style="margin-right:25px;margin-left:10px">
+                                    <option value="일산">일산 (13211)</option>
+                                    <option value="송도">송도 (13210)</option>
+                                    <option value="구로">구로 (13206)</option>
+                                </select>
+                                날짜
+                                <select name="select_year" class="sel" style="margin-left:10px">
+                                    <option value="2017">2017년</option>
+                                    <option value="2016">2016년</option>
+                                    <option value="2015">2015년</option>
+                                </select>
+                                <select name="select_month" class="sel" >
+                                    <option value="01">01월</option>
+                                    <option value="02">02월</option>
+                                    <option value="03">03월</option>
+                                    <option value="04">04월</option>
+                                    <option value="05">05월</option>
+                                    <option value="06">06월</option>
+                                    <option value="07">07월</option>
+                                    <option value="08">08월</option>
+                                    <option value="09">09월</option>
+                                    <option value="10">10월</option>
+                                    <option value="11">11월</option>
+                                    <option value="12">12월</option>
+                                </select>
+                                <select name="select_day" class="sel" >
+                                    <option value="01">01일</option>
+                                    <option value="02">02일</option>
+                                    <option value="03">03일</option>
+                                    <option value="04">04일</option>
+                                    <option value="05">05일</option>
+                                    <option value="06">06일</option>
+                                    <option value="07">07일</option>
+                                    <option value="08">08일</option>
+                                    <option value="09">09일</option>
+                                    <option value="10">10일</option>
+                                    <option value="11">11일</option>
+                                    <option value="12">12일</option>
+                                    <option value="13">13일</option>
+                                    <option value="14">14일</option>
+                                    <option value="15">15일</option>
+                                    <option value="16">16일</option>
+                                    <option value="17">17일</option>
+                                    <option value="18">18일</option>
+                                    <option value="19">19일</option>
+                                    <option value="20">20일</option>
+                                    <option value="21">21일</option>
+                                    <option value="22">22일</option>
+                                    <option value="23">23일</option>
+                                    <option value="24">24일</option>
+                                    <option value="25">25일</option>
+                                    <option value="26">26일</option>
+                                    <option value="27">27일</option>
+                                    <option value="28">28일</option>
+                                    <option value="29">29일</option>
+                                    <option value="30">30일</option>
+                                </select>
+                                <button type="button" class="btn_search" onclick="">검색</button>
+                            </fieldset>                             
+                        </form>
+                    </div>
+                    <table class="table_list" style="margin-top:15px">
+                        <thead>
+                            <tr>
+                                <th>NO</th>
+                                <th>RCV Time</th>
+                                <th>Measurement Type</th>
+                                <th>PARAM 1</th>
+                                <th>PARAM 2</th>
+                                <th>PARAM 3</th>
+                                <th>PARAM 4</th>
+                                <th>ACCUM.TIME</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2017.02.27 14:12:10.511</td>
+                                <td>1 – with constant elevation angle(PPI)</td>
+                                <td>-180</td>
+                                <td>30</td>
+                                <td>1</td>
+                                <td>1000</td>
+                                <td>1000</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>2017.02.27 14:12:10.511</td>
+                                <td>1 – with constant elevation angle(PPI)</td>
+                                <td>-180</td>
+                                <td>30</td>
+                                <td>1</td>
+                                <td>1000</td>
+                                <td>1000</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>2017.02.27 14:12:10.511</td>
+                                <td>1 – with constant elevation angle(PPI)</td>
+                                <td>-180</td>
+                                <td>30</td>
+                                <td>1</td>
+                                <td>1000</td>
+                                <td>1000</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>2017.02.27 14:12:10.511</td>
+                                <td>1 – with constant elevation angle(PPI)</td>
+                                <td>-180</td>
+                                <td>30</td>
+                                <td>1</td>
+                                <td>1000</td>
+                                <td>1000</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>2017.02.27 14:12:10.511</td>
+                                <td>1 – with constant elevation angle(PPI)</td>
+                                <td>-180</td>
+                                <td>30</td>
+                                <td>1</td>
+                                <td>1000</td>
+                                <td>1000</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>2017.02.27 14:12:10.511</td>
+                                <td>1 – with constant elevation angle(PPI)</td>
+                                <td>-180</td>
+                                <td>30</td>
+                                <td>1</td>
+                                <td>1000</td>
+                                <td>1000</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>2017.02.27 14:12:10.511</td>
+                                <td>1 – with constant elevation angle(PPI)</td>
+                                <td>-180</td>
+                                <td>30</td>
+                                <td>1</td>
+                                <td>1000</td>
+                                <td>1000</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>2017.02.27 14:12:10.511</td>
+                                <td>1 – with constant elevation angle(PPI)</td>
+                                <td>-180</td>
+                                <td>30</td>
+                                <td>1</td>
+                                <td>1000</td>
+                                <td>1000</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>2017.02.27 14:12:10.511</td>
+                                <td>1 – with constant elevation angle(PPI)</td>
+                                <td>-180</td>
+                                <td>30</td>
+                                <td>1</td>
+                                <td>1000</td>
+                                <td>1000</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>2017.02.27 14:12:10.511</td>
+                                <td>1 – with constant elevation angle(PPI)</td>
+                                <td>-180</td>
+                                <td>30</td>
+                                <td>1</td>
+                                <td>1000</td>
+                                <td>1000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="pageNate">
+                        <a class="start" href=""></a>
+                        <a class="prev" href=""></a>
+                        <a class="selected" href="">1</a>
+                        <a href="">2</a>
+                        <a href="">3</a>
+                        <a href="">4</a>
+                        <a href="">5</a>
+                        <a class="next" href=""></a>
+                        <a class="end" href=""></a>
+                    </div>
+                    <button type="button" class="btn_blue fl_right" onclick="">리스트</button>                
+                </div>
+            </div>
+            <div id="footer">
+                Wind Lidar관측자료 수신현황  e-mail : email@email.co.kr TEL : 02-123-4567<br/>COPYRIGHT (c) 2017 WIND LIDAR ALL RIGHTS RESERVED
+            </div>
+        </div>
+    </body>
+</html>
